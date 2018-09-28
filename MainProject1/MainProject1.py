@@ -8,7 +8,20 @@ def main() :
 
     print (strGrade)
 
-    print (avggpa())
+    avgGrade = [92.6,92.8,95.6,98.1]
+
+    theAvggrade = avggpa(avgGrade,len(avgGrade))
+
+    strPercent = lettergrade(theAvggrade)
+
+    print(strPercent)
+
+    if strPercent == 'You have an A' or strPercent == 'You have a B' or strPercent == 'You have a C':
+        print('You are passing')
+    else:
+        print('You are failing')
+
+
 
 def getgrade(gradeYear):
 
@@ -35,16 +48,44 @@ def getgrade(gradeYear):
             return('You are not in highschool')
 
 
-def avggpa() :
+def avggpa(mylist,num) :
 
-        avgGrade = [92.6,92.8,95.6,98.1]
+        print(mylist)
+        print(num)
 
-        x = avgGrade[0] + avgGrade[1] + avgGrade[2] + avgGrade[3]
+        x = mylist[0] + mylist[1] + mylist[2] + mylist[3]
 
         y = x / 4
 
         return y
 
-def lettergrade()
+def lettergrade(percentgrade):
+
+        if percentgrade >= 92.5:
+
+            return('You have an A')
+
+        elif percentgrade >= 88:
+
+            return('You have a B')
+
+        elif percentgrade >= 78:
+
+            return('You have a C')
+
+        elif percentgrade >= 72:
+
+            return ('You have a D')
+
+        elif percentgrade >= 65:
+
+            return ('You have a F')
+
+        else:
+
+            return('Do you even show up to class?')
+
+
 
 main()
+

@@ -2,13 +2,13 @@ def main() :
 
     gradeYear = input('What year are you in school - ')
 
-    print(gradeYear)
+    #print(gradeYear)
 
     strGrade = getgrade(gradeYear)
 
     print (strGrade)
 
-    avgGrade = [92.6,92.8,95.6,98.1]
+    avgGrade = [92.5,95.6,96.6,98.9]
 
     theAvggrade = avggpa(avgGrade,len(avgGrade))
 
@@ -29,19 +29,19 @@ def getgrade(gradeYear):
 
         if gradeYear == '9':
 
-            return('freshman')
+            return('You are a freshman')
 
         elif gradeYear == '10':
 
-            return('sophmore')
+            return('You are a sophmore')
 
         elif gradeYear == '11':
 
-            return('junior')
+            return('You are a junior')
 
         elif gradeYear == '12':
 
-            return('senior')
+            return('You are a senior')
 
         else:
 
@@ -50,8 +50,8 @@ def getgrade(gradeYear):
 
 def avggpa(mylist,num) :
 
-        print(mylist)
-        print(num)
+        #print(mylist)
+        #print(num)
 
         x = mylist[0] + mylist[1] + mylist[2] + mylist[3]
 

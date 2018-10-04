@@ -1,21 +1,25 @@
+
 def main():
 
-    strWord = input('Input a word here - ')
+    strWord = input('Input your word here - ')
 
-    print(strWord)
+    #print(strWord)
 
-    answer = deVowel(strWord)
+    print(deVowel(strWord))
 
-def deVowel(mystring):
+def deVowel(strWord):
 
-    print(mystring)
+    noVowel = ''
 
-    novowels = ''
+    for x in strWord:
 
-    for letter in mystring:
-        if mystring = 
+        if x == 'a' or x == 'e' or x == 'i' or x == 'o' or x == 'u':
 
+            y = 'p'
 
+        else:
+            noVowel = noVowel + x
 
+    return (noVowel)
 
 main()

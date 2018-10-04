@@ -18,6 +18,7 @@ def deVowel(strWord):
             y = 'p'
 
         else:
+
             noVowel = noVowel + x
 
     return (noVowel)

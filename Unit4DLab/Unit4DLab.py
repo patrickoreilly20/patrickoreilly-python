@@ -26,6 +26,11 @@ def countQtips(totalQtips):
 
     print(totalQtips)
 
+    print (totalQtips.count('q-tips'))
+
+
+
+
 
 
 

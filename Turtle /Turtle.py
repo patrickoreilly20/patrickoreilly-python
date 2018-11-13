@@ -2,7 +2,7 @@ import turtle
 turtle.bgcolor('black')
 turtle.color('white')
 def square():
-
+    turtle.color('green')
     turtle.forward(50)
     turtle.left(90)
     turtle.forward(50)
@@ -25,6 +25,7 @@ def square():
 
 
 def rectangle():
+    turtle.color('pink')
     turtle.penup()
     turtle.goto(-100,-100)
     turtle.pendown()
